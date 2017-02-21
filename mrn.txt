@@ -4,8 +4,8 @@
 
 Network Working Group                                         K. Nielsen
 Internet-Draft                                 Danish Maritime Authority
-Intended status: Informational                         February 20, 2017
-Expires: August 24, 2017
+Intended status: Informational                         February 21, 2017
+Expires: August 25, 2017
 
 
                      Maritime Resource Names (MRN)
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 24, 2017.
+   This Internet-Draft will expire on August 25, 2017.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Nielsen                  Expires August 24, 2017                [Page 1]
+Nielsen                  Expires August 25, 2017                [Page 1]
 
 Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
@@ -65,8 +65,8 @@ Table of Contents
    3.  Examples  . . . . . . . . . . . . . . . . . . . . . . . . . .   5
    4.  Namespace Considerations  . . . . . . . . . . . . . . . . . .   8
    5.  Community Considerations  . . . . . . . . . . . . . . . . . .   8
-   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   8
-   7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   8
+   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   9
+   7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
    8.  Normative References  . . . . . . . . . . . . . . . . . . . .   9
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   9
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Nielsen                  Expires August 24, 2017                [Page 2]
+Nielsen                  Expires August 25, 2017                [Page 2]
 
 Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
@@ -165,7 +165,7 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
 
 
-Nielsen                  Expires August 24, 2017                [Page 3]
+Nielsen                  Expires August 25, 2017                [Page 3]
 
 Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
@@ -204,6 +204,8 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
     ;   comment
 
+    <URN chars>  As defined in [@!RFC2141]
+
    Relevant ancillary documentation:
 
       The process for assigning unique organizational IDs is managed by
@@ -215,16 +217,17 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
       Guaranteeing uniqueness is a two-way process.  First, IALA will
       guarantee that each organization will be assigned a unique
       organizational id that will never be reused.  Second, each
-      organization must guarantee that they do not assign identical
-      organizational specific strings (OSS).
 
 
 
 
-Nielsen                  Expires August 24, 2017                [Page 4]
+Nielsen                  Expires August 25, 2017                [Page 4]
 
 Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
+
+      organization must guarantee that they do not assign identical
+      organizational specific strings (OSS).
 
    Identifier persistence considerations:
 
@@ -271,16 +274,16 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    All the examples provided in the following section are hypothetical
    examples.  Real world naming schemes will most likely look different.
 
-   A vessel with an IMO number of 9743368 could be identified as
-   follows:
 
 
 
-
-Nielsen                  Expires August 24, 2017                [Page 5]
+Nielsen                  Expires August 25, 2017                [Page 5]
 
 Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
+
+   Using the MRN identifier scheme a vessel with an IMO number of
+   9743368 could be identified as follows:
 
       urn:mrn:imo:imo-number:9743368
 
@@ -288,20 +291,27 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    International Maritime Organization (IMO).  IMO may have delegated
    the actual assignment of numbers to another organization.  But IMO is
    still the organization who has determined that an IMO number is an
-   unique seven-digit number.  Hence the organizational id (OID) of the
-   identifier will be "imo".  The type imo-number is a reference to the
-   type of identifier.  This name is something the governing
-   organization decides upon internally.  In this example, we have used
-   imo-number but it could just as well have been imo:imonumber or just
-   imo:number.  Finally, what follows the organizational ID and the
-   organizational specific namespace ID is the organizational specific
-   namespace string (OSNS) which in this case is 9743368.  The type
-   specific part is (as the name implies) specific to the combination of
-   organizational id and namespace ID.  In this case the organizational
-   type specific part is always a 7 digit IMO number.
+   unique seven-digit number.  Within the context of maritime resource
+   names the organizational id (OID) refers to the organization who
+   governs the syntax and rules of a particular resource type.  In the
+   above case the organizational ID is "imo".
 
-   Another way to identify the vessel might be to use its MMSI number.
-   Here the identifier might look like this:
+   Each organization further divides the organizational specific string
+   (OSS), which is the part following "imo", into two parts.  An
+   organizational specific namespace ID (OSNID) which is a unique
+   identifier within the governing organization for a particular type of
+   resource.  In this example, we have used "imo-number" but it could
+   just as well have been "imonumber" or just "number".
+
+   The second part is the organizational specific namespace string
+   (OSNS).  Which is the only part that differs for resources of the
+   same type, in this case it is "9743368".  The organizational specific
+   namespace string is (as the name implies) specific for a combination
+   of a OID and OSNID.  In this case the organizational specific
+   namespace string is always a 7 digit IMO number.
+
+   Another way to identify the same vessel might be to use its MMSI
+   number.  Here the identifier could look like this:
 
       urn:mrn:itu:mmsi:538070999
 
@@ -310,14 +320,23 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    does the actual assignment of MMSI numbers, but ITU is the governing
    body for the standardization of MMSI numbers.
 
-   As can be seen from this two examples.  The same vessel can be
+   As can be seen from these two examples.  The same vessel can be
    identified by multiple different identifiers.  This is no different
    to a person who might be identified either by his driver license
    number or his social security id.  Multiple identities can identify
-   the same entity.  But some parameters frequently used for
-   identification, such as 'names', may not qualify as identifiers, as
-   they are not guaranteed to be unique.  A single identifier must refer
-   to one and only one identity.
+   the same entity.  Some parameters frequently used for identification,
+   such as 'names of people', do most of the time qualify as
+   identifiers, as they are not guaranteed to be unique.  A single
+   identifier must refer to one and only one identity.
+
+
+
+
+
+Nielsen                  Expires August 25, 2017                [Page 6]
+
+Internet-Draft        Maritime Resource Names (MRN)        February 2017
+
 
    The concept of URNs can be taken from a very coarse grained level to
    a very fine grained level.  For example, a container ship might be
@@ -325,19 +344,11 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    the ship might be identified with an URN adapting the ISO 6346
    identifier scheme for container ids.
 
-      urn:mrn:bic:container-id:CSQU3054383
+      urn:mrn:bic:container-id:csqu3054383
 
    Finally, individual items in a single container might be identified
    by another URN scheme.  It might even be possible to integrate with
    URNs defined outside of the urn:mrn namespace.  For example, all
-
-
-
-Nielsen                  Expires August 24, 2017                [Page 6]
-
-Internet-Draft        Maritime Resource Names (MRN)        February 2017
-
-
    items in a container might be identified by an electronic product
    code ([RFC5134]).  In other words, the usage of URNs as identifiers
    are not limited to those defined within this document.  In the future
@@ -345,12 +356,15 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    based on URNs to facilitate easier integration across sector
    boundaries.
 
-   An identifier does not need to be a physical object, but could be a
+   An identifier does not need to be a physical object, but can be a
    virtual item such as an electronic document.  For example, IMO might
-   decide that all of their documents would use a
-   "urn:mrn:imo:publications" prefix.  So
-   urn:mrn:imo:publications:IF110S would refer to the publication "IMO
-   SOLAS Consolidated Spanish Edition, 2014 IF110S"
+   decide that all of their documents would use a "publications" prefix.
+   So
+
+      urn:mrn:imo:publications:if110s
+
+   would refer to the publication "IMO SOLAS Consolidated Spanish
+   Edition, 2014 IF110S"
 
    On the other hand an organization such as IALA might decide that all
    of their publications would follow another format where the category
@@ -359,18 +373,26 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
 
       urn:mrn:iala:publications:recommendation:e-nav-140
 
-   while the identifier of a guideline might be written such as
+   while the identifier of a guideline might be written as
 
       urn:mrn:iala:publications:guideline:synchronisation-of-lights-1069
 
-   As can be seen from the previous example the type specific part can
-   be split into multiple hierarchies.  It is all up to the governing
-   organization how they want to structure their identifiers.
+   As can be seen from the previous example the Organizational specific
+   namespace string can be split into multiple hierarchies.  It is all
+   up to the governing organization how they want to structure their
+   identifiers.
 
    Another example of identifiers with multiple hierarchies could be an
    identifier scheme for lights and buoys.  Here IALA could choose to
    let the OSNS consist of <CountryCode>:<National Identifier>.  For
    example
+
+
+
+Nielsen                  Expires August 25, 2017                [Page 7]
+
+Internet-Draft        Maritime Resource Names (MRN)        February 2017
+
 
       urn:mrn:iala:aton:us:1234x5
 
@@ -385,14 +407,6 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    voyage plan.  But when working with external systems or other
    projects the full URN can be used in case other projects uses another
    type of identifier for a particular voyage.
-
-
-
-
-Nielsen                  Expires August 24, 2017                [Page 7]
-
-Internet-Draft        Maritime Resource Names (MRN)        February 2017
-
 
    As can be seen from all these examples.  The scheme is highly
    adaptable.  Each organization can choose their own layout for a
@@ -428,6 +442,14 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    country uses standards available in ISO 3166 for the representation
    of names of countries and their subdivisions.
 
+
+
+
+Nielsen                  Expires August 25, 2017                [Page 8]
+
+Internet-Draft        Maritime Resource Names (MRN)        February 2017
+
+
 6.  Security Considerations
 
    There are no additional security considerations other than those
@@ -439,16 +461,6 @@ Internet-Draft        Maritime Resource Names (MRN)        February 2017
    This document defines a URN NID registration that is to be entered
    into the IANA registry of URN NIDs.  It specifically requests the MRN
    NID.
-
-
-
-
-
-
-Nielsen                  Expires August 24, 2017                [Page 8]
-
-Internet-Draft        Maritime Resource Names (MRN)        February 2017
-
 
 8.  Normative References
 
@@ -489,16 +501,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-Nielsen                  Expires August 24, 2017                [Page 9]
+Nielsen                  Expires August 25, 2017                [Page 9]
