@@ -12,7 +12,7 @@ http://www.ietf.org/id/draft-nielsen-mrn-urn-00.txt provides a more detailed exp
 == Who is using it
 We are currently getting some experience using MRNs in the following projects
 |===
-|Who | What For |
+|Who | What For
 |http://efficiensea2.org/ | For identification of users, organizations and services
 |http://stmvalidation.eu/ | For identification of organizations, services and voyages
 |Smart Navigation | For identification of users
