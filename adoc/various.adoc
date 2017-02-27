@@ -1,6 +1,6 @@
 Welcome to Maritime Resource Name Registry. This page is just getting started (February 2017). But it is our goal to be able to provide up to date information about Maritime Resource Names and the usage of them within the maritime industry.
 
-The usage of Maritime Resource Names are currently in the process of being standardized and we expect this to be finalized in early 2018. The first draft of our proposal for MRNs is up at http://www.ietf.org/id/draft-nielsen-mrn-urn-00.txt
+The usage of Maritime Resource Names are currently in the process of being standardized and we expect this to be finalized in early 2018. The first draft of our proposal for MRNs is up at https://tools.ietf.org/html/draft-knielsen-mrn-urn-00
 
 We expect to work through a number of drafts. And we will welcome comments and contributions either by signing up to our discussion group at https://groups.google.com/forum/#!forum/mrn-discuss or by emailing the author directly (kasperni@gmail.com).
 
