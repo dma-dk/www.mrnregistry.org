@@ -21,11 +21,11 @@ However, if you wish to make use of MRNs in your project please contact us at <i
 ## Who is using it
 We are currently getting some experience using MRNs in the following projects
 
-| Who                               | What For                                                  |
-|-----------------------------------|-----------------------------------------------------------|
-| <http://efficiensea2.org/>        | For identification of users, organizations and services   |
-| <http://stmvalidation.eu/>        | For identification of organizations, services and voyages |
-| Smart Navigation                  | For identification of users                               |
-| <http://http://www.iala-aism.org/ | MSP8 Vessel Shore Reporting Service                       |
+| Who                                | What For                                                  |
+|------------------------------------|-----------------------------------------------------------|
+| <http://efficiensea2.org/>         | For identification of users, organizations and services   |
+| <http://stmvalidation.eu/>         | For identification of organizations, services and voyages |
+| Smart Navigation                   | For identification of users                               |
+| <http://http://www.iala-aism.org/> | MSP8 Vessel Shore Reporting Service                       |
 
 Readers may send feedback about errors, omissions, and ambiguities on this page to <info@mrnregistry.org>
