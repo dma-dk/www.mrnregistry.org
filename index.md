@@ -24,7 +24,7 @@ We are currently getting some experience using MRNs in the following projects
 |-----------------------------|-----------------------------------------------------------|
 | <http://efficiensea2.org/>  | For identification of users, organizations and services   |
 | <http://stmvalidation.eu/>  | For identification of organizations, services and voyages |
-| <http://smartnav.org>       | For identification of users                               |
+| <http://www.smartnav.org>   | For identification of users                               |
 | <http://www.iala-aism.org/> | Vessel Shore Reporting Service                            |
 
 Readers may send feedback about errors, omissions, and ambiguities on this page to <info@mrnregistry.org>
