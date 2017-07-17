@@ -14,7 +14,7 @@ Maritime Resource Names (MRN) is a naming scheme that can uniquely identify any 
 
 Our [original paper](http://mrnregistry.org/Maritime%20Resource%20Name.docx) was presented at the [17th IALA Conference](http://www.iala-aism.org/meetings/17/).
 
-<http://www.ietf.org/id/draft-nielsen-mrn-urn-01.txt> provides a more detailed explanation of the concept and a number of examples.
+<https://www.ietf.org/id/draft-knielsen-mrn-urn-02.txt> provides a more detailed explanation of the concept and a number of examples.
 
 ## Applying for a Namespace
 Since we are still in the process of finalizing the standard and there are no formal process for applying for a namespace yet. However, if you wish to make use of MRNs in your project please contact us at <info@mrnregistry.org> and tell us a bit about your project and what subnamespace you wish to use.
