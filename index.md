@@ -26,7 +26,6 @@ We are currently getting some experience using MRNs in the following projects
 | <http://stmvalidation.eu/>  | For identification of organizations, services and voyages |
 | <http://www.smartnav.org>   | For identification of users                               |
 | <http://www.iala-aism.org/> | Vessel Shore Reporting Service                            |
-| <http://www.iho.int/>       | Standard for identifiers utilized within S-100
-based product specifications |                         |
+| <http://www.iho.int/>       | Identifiers utilized within S-100 product specifications  |
 
 Readers may send feedback about errors, omissions, and ambiguities on this page to <info@mrnregistry.org>.
