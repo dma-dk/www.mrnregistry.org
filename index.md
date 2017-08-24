@@ -7,7 +7,7 @@ Welcome to the Maritime Resource Name Registry hosted by [IALA](http://www.iala-
 
 We are currently in the process of standardizing MRN and we expect this to be finalized sometime in 2017.
 
-We welcome comments and contributions either by signing up to our discussion group at <https://groups.google.com/forum/#!forum/mrn-discuss> or by emailing us directly at (<info@mrnregistry.org>).
+We welcome comments and contributions either by signing up to our discussion group at <https://groups.google.com/forum/#!forum/mrn-discuss> or by emailing us directly at <info@mrnregistry.org>.
 
 ## What is Maritime Resource Names
 Maritime Resource Names (MRN) is a naming scheme that can uniquely identify any maritime resource on a global scale. By maritime resource we basically mean anything that has an identity of some kind. This could be organizations, employees, a person, a physical or a virtual object, for instance an electronic document, a buoy, a ship, a mariner, a nautical chart or an electronic service (e.g., "today’s weather report for the Oresund Strait"). Not all resources are "retrievable" in an electronic sense; For example, human beings, corporations, and buoys. However, they can still be considered a resource.
@@ -17,10 +17,9 @@ Our [original paper](http://mrnregistry.org/Maritime%20Resource%20Name.docx) was
 ## Organization ID Application Process
 Assignment of Organization IDs are mainly reserved for maritime standards development organizations, research projects, scientific societies, and similar bodies. However, anyone can apply and each application is evaluated on a case by case basis by the IALA secretary.
 
+If you wish to apply for an Organization ID please fill out a form similar to [this](https://github.com/MRNRegistry/mrnregistry/blob/master/organizations/mcl.txt) and send it to <info@mrnregistry.org>. We will then get back to you with more details.
+
 A list of all assigned Organization IDs can be found [here](https://github.com/MRNRegistry/mrnregistry/tree/master/organizations).
-
-If you wish to apply for an Organization ID please fill out a template similar to [this](https://github.com/MRNRegistry/mrnregistry/blob/master/organizations/mcl.txt) and send it to <info@mrnregistry.org>. And then we will get back to use.
-
 
 ## Who is using it
 We are currently getting some experience using MRNs in the following projects
