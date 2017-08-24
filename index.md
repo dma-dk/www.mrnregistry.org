@@ -17,7 +17,7 @@ Our [original paper](http://mrnregistry.org/Maritime%20Resource%20Name.docx) was
 ## Organization ID Application Process
 Assignment of Organization IDs are mainly reserved for maritime standards development organizations, research projects, scientific societies, and similar bodies. However, anyone can apply and each application is evaluated on a case by case basis by the IALA secretary.
 
-If you wish to apply for an Organization ID please fill out a form similar to [this](https://github.com/MRNRegistry/mrnregistry/blob/master/organizations/mcl.txt) and send it to <info@mrnregistry.org>. We will then get back to you with more details.
+If you wish to apply for an Organization ID please fill out a form similar to [this](https://raw.githubusercontent.com/MRNRegistry/mrnregistry/master/organizations/mcl.txt) and send it to <info@mrnregistry.org>. We will then get back to you with more details.
 
 A list of all assigned Organization IDs can be found [here](https://github.com/MRNRegistry/mrnregistry/tree/master/organizations).
 
