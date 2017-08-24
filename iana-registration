@@ -115,7 +115,7 @@ Examples:
    number," but this could just as well have been "imonumber" or even 
    simply "number".
 
-  The second part is the organization-specific namespace string (OSNS).
+   The second part is the organization-specific namespace string (OSNS).
    This is the only part that differs for resources of the same type; in
    this case it is "9743368".  The organization-specific namespace
    string is, as the name implies, specific to a particular combination
@@ -211,29 +211,29 @@ Examples:
 
 Assignment:
   
-  Assignment of Organization IDs is done by filling out and sending in the 
-  registration template, as detailed on http://www.mrnregistry.org. Records 
-  of all successful registrations will be maintained in a public version 
-  control repository as detailed on the website. 
+   Assignment of Organization IDs is done by filling out and sending in the 
+   registration template, as detailed on http://www.mrnregistry.org. Records 
+   of all successful registrations will be maintained in a public version 
+   control repository as detailed on the website. 
   
-  Assignment of Organization-Specific Namespace IDs is done individually by
-  each organization and should be managed in accordance to the instructions
-  provided at http://www.mrnregistry.org.
+   Assignment of Organization-Specific Namespace IDs is done individually by
+   each organization and should be managed in accordance to the instructions
+   provided at http://www.mrnregistry.org.
   
 Security and Privacy:
 
-  Around 90% of world trade is carried by the international shipping industry 
-  and security incidents can result in major disruption to world trade or life
-  threatening situations for crew or passengers. Since individual organizations 
-  manage their own organizational namespace, security and privacy must be 
-  evaluated on a case by case basis.
+   Around 90% of world trade is carried by the international shipping industry 
+   and security incidents can result in major disruption to world trade or life
+   threatening situations for crew or passengers. Since individual organizations 
+   manage their own organizational namespace, security and privacy must be 
+   evaluated on a case by case basis.
 
 Interoperability:
    
-  Interoperability with existing standards for identifying maritime resources 
-  is one of the main drivers for this proposal. Since individual organizations 
-  manage their own organizational namespace, interoperability must be evaluated 
-  on a case by case basis.
+   Interoperability with existing standards for identifying maritime resources 
+   is one of the main drivers for this proposal. Since individual organizations 
+   manage their own organizational namespace, interoperability must be evaluated 
+   on a case by case basis.
 
 Resolution:
 
