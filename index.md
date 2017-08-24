@@ -14,8 +14,13 @@ Maritime Resource Names (MRN) is a naming scheme that can uniquely identify any 
 
 Our [original paper](http://mrnregistry.org/Maritime%20Resource%20Name.docx) was presented at the [17th IALA Conference](http://www.iala-aism.org/meetings/17/).
 
-## Application Process
-Since we are still in the process of finalizing the standard and there are no formal process for applying for a namespace yet. However, if you wish to make use of MRNs in your project please contact us at <info@mrnregistry.org> and tell us a bit about your project and what subnamespace you wish to use.
+## Organization ID Application Process
+Assignment of Organization IDs are mainly reserved for maritime standards development organizations, research projects, scientific societies, and similar bodies. However, anyone can apply and each application is evaluated on a case by case basis by the IALA secretary.
+
+A list of all assigned Organization IDs can be found [here](https://github.com/MRNRegistry/mrnregistry/tree/master/organizations).
+
+If you wish to apply for an Organization ID please fill out a template similar to [this](https://github.com/MRNRegistry/mrnregistry/blob/master/organizations/mcl.txt) and send it to <info@mrnregistry.org>. And then we will get back to use.
+
 
 ## Who is using it
 We are currently getting some experience using MRNs in the following projects
