@@ -216,9 +216,8 @@ Assignment:
    of all successful registrations will be maintained in a public version 
    control repository as detailed on the website. 
   
-   Assignment of Organization-Specific Namespace IDs is done individually by
-   each organization and should be managed in accordance to the instructions
-   provided at http://www.mrnregistry.org.
+   Management of Organization-Specific Namespace IDs should be done in 
+   accordance to the guidelines provided at http://www.mrnregistry.org.
   
 Security and Privacy:
 
