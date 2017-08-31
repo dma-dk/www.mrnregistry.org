@@ -34,7 +34,7 @@ Registrant:
    world, offering them the opportunity to exchange and compare their
    experiences and achievements.
 
-   The requesting entity is a international recognized standards development 
+   The requesting entity is an international recognized standards development 
    organization. And is applying for the namespace registration as such.
 
 Purpose:
@@ -72,7 +72,7 @@ Syntax:
 
       <OSS>   ::= <OSNID> ":" <OSNS> ; Organization-specific string
                 
-      <OSNID> ::= (alphanum) 0*20(alphanum / "-") (alphanum) 
+      <OSNID> ::= (alphanum) 0*32(alphanum / "-") (alphanum) 
                   ; Organization-specific namespace ID
 
       <OSNS>  ::= pchar *(pchar / "/") ; Organization-specific namespace string
@@ -83,9 +83,17 @@ Syntax:
        
       rq-components and f-component as defined in [RFC8141].
        
-   The namespace, “mrn”, is case-insensitive in processing but is conventionally written in lower case. 
+   The namespace, “mrn”, is case-insensitive in processing but is 
+   conventionally written in lower case. 
 
-   Q-component, F-component and R-component are not generally defined by this specification. Organization specific namespace strings might choose to make use of them where applicable.
+   Q-component, F-component and R-component are not generally defined by this 
+   specification. Organization specific namespace strings might choose to make
+   use of them where applicable.
+
+   If adopting existing non-URN based identifier systems that includes 
+   characters not allowed by the URN syntax as specified in [RFC8141].
+   The representation of these characters should be handled by percent-encoding 
+   the character as specified in Section 2.1 of the URI specification [RFC3986].
 
 Examples:
 
@@ -208,6 +216,12 @@ Examples:
    into the naming scheme, and it provides good context information
    about the type of the identifier, unlike something simple such as a
    random UUID.
+  
+   It is important to note that even though IALA is the maintainer of the MRN
+   URN namespace it cannot define MRNs outside of the "urn:mrn:iala" namespace.
+   All of the above examples that are not in the "urn:mrn:iala" namespace,
+   requires that the relevant organization explicitly requests an Organization
+   ID with IALA.
 
 Assignment:
   
@@ -215,7 +229,7 @@ Assignment:
    registration template, as detailed on http://www.mrnregistry.org. Records 
    of all successful registrations will be maintained in a public version 
    control repository as detailed on the website. 
-  
+   
    Management of Organization-Specific Namespace IDs should be done in 
    accordance to the guidelines provided at http://www.mrnregistry.org.
   
@@ -231,8 +245,7 @@ Interoperability:
    
    Interoperability with existing standards for identifying maritime resources 
    is one of the main drivers for this proposal. Since individual organizations 
-   manage their own organizational namespace, interoperability must be evaluated 
-   on a case by case basis.
+   manage their own organizational namespace, interoperability must be evaluated on a case by case basis.
 
 Resolution:
 
