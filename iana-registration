@@ -83,8 +83,7 @@ Syntax:
        
       rq-components and f-component as defined in [RFC8141].
        
-   The namespace, “mrn”, is case-insensitive in processing but is 
-   conventionally written in lower case. 
+   The namespace, “mrn”, OID, and OSNID tokens are conventionally written in lower case. 
 
    Q-component, F-component and R-component are not generally defined by this 
    specification. Organization specific namespace strings might choose to make
@@ -94,6 +93,15 @@ Syntax:
    characters not allowed by the URN syntax as specified in [RFC8141].
    The representation of these characters should be handled by percent-encoding 
    the character as specified in Section 2.1 of the URI specification [RFC3986].
+
+Rules for Lexical Equivalence:
+
+   In addition to the URN equivalance rules defined in Section 2.1 of the URN
+   specification [RFC8141]. Case normalization must be applied to both the OID 
+   and OSNID part before determining lexical equivalence.
+
+   Rules for equality comparisons of the OSNS part must be clearly documented 
+   by the governing organization.
 
 Examples:
 
