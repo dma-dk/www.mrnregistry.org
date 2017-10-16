@@ -226,13 +226,17 @@ Examples:
 Assignment:
   
    Assignment of Organization IDs is done by filling out and sending in the 
-   registration template, as detailed on http://www.mrnregistry.org. Records 
-   of all successful registrations will be maintained in a public version 
-   control repository as detailed on the website. 
+   registration template, as detailed on http://www.mrnregistry.org. IALA will
+   ensure the uniqueness of Organization IDs by ensuring that an id can only be
+   assigned once. Records of all successful registrations will be maintained in 
+   a public version control repository as detailed on the website. 
    
-   Management of Organization-Specific Namespace IDs should be done in 
-   accordance to the guidelines provided at http://www.mrnregistry.org.
-  
+   The assignment procedures for MRN strings under a particular 
+   Organization-specific namespace ID is the responsibility of the maintaining 
+   organization. The considerations provided by http://www.mrnregistry.org as 
+   well as Section 6.4.3 of the URN specification [RFC8141] must be taken into 
+   account when defining the actual assignment procedure.
+   
 Security and Privacy:
 
    Around 90% of world trade is carried by the international shipping industry 
@@ -245,7 +249,8 @@ Interoperability:
    
    Interoperability with existing standards for identifying maritime resources 
    is one of the main drivers for this proposal. Since individual organizations 
-   manage their own organizational namespace, interoperability must be evaluated on a case by case basis.
+   manage their own organizational namespace, interoperability must be evaluated on a 
+   case by case basis.
 
 Resolution:
 
