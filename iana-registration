@@ -240,7 +240,7 @@ Assignment:
    a public version control repository as detailed on the website. 
    
    The assignment procedures for MRN strings under a particular 
-   Organization-specific namespace ID is the responsibility of the maintaining 
+   Organization-specific namespace ID are the responsibility of the maintaining 
    organization. The considerations provided by http://www.mrnregistry.org as 
    well as Section 6.4.3 of the URN specification [RFC8141] must be taken into 
    account when defining the actual assignment procedure.
