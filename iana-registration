@@ -101,7 +101,8 @@ Rules for Lexical Equivalence:
    and OSNID part before determining lexical equivalence.
 
    Rules for equality comparisons of the OSNS part must be clearly documented 
-   by the governing organization.
+   by the governing organization, and be consistent with sections 3.1 and 6.4.2 of 
+   [RFC8141].
 
 Examples:
 
